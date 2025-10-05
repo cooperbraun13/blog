@@ -1,13 +1,17 @@
 @import "tailwindcss";
 
+/* define fonts */
+@theme {
+  --font-poppins: var(--font-poppins);
+  --font-cormorantGaramond: var(--font-cormorantGaramond);
+}
+
 .article {
   @apply flex flex-col gap-3 font-poppins text-lg tracking-wide mb-20;
 }
-
 .article > h1 {
   @apply font-cormorantGaramond text-4xl text-center tracking-tight;
 }
-
 .article > h2 {
   @apply font-cormorantGaramond text-3xl tracking-tight;
 }
@@ -25,5 +29,5 @@
 }
 
 .article > blockquote {
-  @apply pl-5 italic border-l-2 border-neutral-600 border-opacity-40;
+  @apply pl-5 italic border-l-2 border-neutral-600/40;
 }
